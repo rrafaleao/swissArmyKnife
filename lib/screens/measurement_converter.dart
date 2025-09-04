@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:swiss_army_knife/utils/unit_conversions.dart';
+import 'package:swiss_army_knife/widgets/custom_app_bar.dart';
 
 class MeasurementConverter extends StatefulWidget {
   const MeasurementConverter({super.key});
@@ -86,7 +87,7 @@ class _MeasurementConverterState extends State<MeasurementConverter> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const CustomAppBar(title: 'Conversor de Sistemas de Medida'),
+      appBar: CustomAppBar(title: 'Conversor de Sistemas de Medida'),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(

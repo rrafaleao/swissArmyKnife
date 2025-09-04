@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:swiss_army_knife/widgets/custom_app_bar.dart';
 import 'dart:math';
 
 class PasswordGenerator extends StatefulWidget {
@@ -98,7 +100,7 @@ class _PasswordGeneratorState extends State<PasswordGenerator> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const CustomAppBar(title: 'Gerador de Senhas'),
+      appBar: CustomAppBar(title: 'Gerador de Senhas'),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
@@ -129,7 +131,7 @@ class _PasswordGeneratorState extends State<PasswordGenerator> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Text('Comprimento: $_length'),
+                      Text('Comprimento: $_length'), // CORRIGIDO: Removido const
                       Slider(
                         value: _length.toDouble(),
                         min: 4,

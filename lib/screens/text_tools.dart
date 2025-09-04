@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart'; 
 import 'package:swiss_army_knife/utils/text_utilities.dart';
+import 'package:swiss_army_knife/widgets/custom_app_bar.dart'; 
 
 class TextTools extends StatefulWidget {
   const TextTools({super.key});

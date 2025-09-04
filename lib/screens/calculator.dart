@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:swiss_army_knife/utils/calculator_operations.dart';
+import 'package:swiss_army_knife/widgets/custom_app_bar.dart';
 
 class CalculatorScreen extends StatefulWidget {
   const CalculatorScreen({super.key});
@@ -126,7 +127,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const CustomAppBar(title: 'Calculadora'),
+      appBar: CustomAppBar(title: 'Calculadora'),
       body: Column(
         children: [
           Expanded(

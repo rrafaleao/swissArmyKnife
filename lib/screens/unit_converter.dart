@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:swiss_army_knife/widgets/custom_app_bar.dart';
 import 'package:swiss_army_knife/utils/unit_conversions.dart';
 
 class UnitConverter extends StatefulWidget {
@@ -61,7 +62,7 @@ class _UnitConverterState extends State<UnitConverter> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const CustomAppBar(title: 'Conversor de Unidades'),
+      appBar: CustomAppBar(title: 'Conversor de Unidades'),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(

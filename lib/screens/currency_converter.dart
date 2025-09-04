@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:swiss_army_knife/utils/currency_converter.dart' as currency_utils;
+import 'package:swiss_army_knife/widgets/custom_app_bar.dart';
 
 class CurrencyConverter extends StatefulWidget {
   const CurrencyConverter({super.key});
@@ -61,7 +62,7 @@ class _CurrencyConverterState extends State<CurrencyConverter> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const CustomAppBar(title: 'Conversor de Moedas'),
+      appBar: CustomAppBar(title: 'Conversor de Moedas'),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
